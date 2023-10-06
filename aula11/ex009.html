@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+
+    Digite seu país de nascença: <input type="text" placeholder="Ex: Espanha" name="txtCountry" id="txtCountry">
+    <input type="button" value="Salvar" onclick="saveCountry()">
+
+    <div id="res"></div>
+
+    <script>
+        function saveCountry(){
+            var Country = window.document.getElementById('txtCountry').value;
+            var result = window.document.getElementById('res')
+
+            result.innerHTML = `<p>Você nasceu em ${Country}!</p>`
+
+            if (Country == 'Brasil'){
+                result.innerHTML += `<p>Portanto, você é brasileiro!</p>`
+            } else{
+                result.innerHTML += `<p>Portanto, você é gringo!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
