@@ -23,6 +23,10 @@ section {
     box-shadow: 5px 5px 10px var(--shadow-color);
 }
 
+div#tabuada{
+    padding-top: 15px;
+}
+
 footer {
     color: var(--title-color);
     text-align: center;
