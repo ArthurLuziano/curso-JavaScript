@@ -5,10 +5,12 @@ function contador(){
     var Result = window.document.getElementById('result').value
     var Total = window.document.getElementById('total')
 
-    Result = Final - Initial
+    Result = Final - Initial;
 
-    while (Initial <= Final){
-        Total.innerHTML = (Result)
-        Initial += Step
-    }
+    do {
+        Total.innerHTML += Result + '&#x1F449;'
+        Result++
+    } while (Number(Result) <= Number(Final))
+
+    Total.innerHTML += '&#x1F3C1;'
 }
