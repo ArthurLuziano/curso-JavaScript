@@ -14,12 +14,14 @@
     <section>
         <div>
             Número:
-            <input type="text" name="number" id="number">
-            <input type="button" value="Gerar resultado" id="result">
+            <input type="number" name="num" id="num">
+            <input type="button" value="Gerar resultado" onclick="genTable()">
         </div>
 
-        <div>
-            
+        <div id="tabuada">
+            <select name="tabSelect" id="tabSelect" size="11">
+                <option>Digite um número acima</option>
+            </select>
         </div>
     </section>
 
