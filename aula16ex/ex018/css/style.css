@@ -1,15 +1,17 @@
 :root{
     --title-color: white;
+    --shadow-color: rgba(0, 0, 0, 0.322);
 }
 
 body {
     background: #7070ff;
-    font: normal 20pt Arial;
+    font: normal 15pt Arial;
 }
 
 header {
     color: var(--title-color);
     text-align: center;
+    text-shadow: 5px 5px 10px var(--shadow-color);
 }
 
 section {
@@ -21,8 +23,13 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
 }
 
+#sel{
+    width: 200px;
+}
+
 footer {
     color: var(--title-color);
     text-align: center;
     font-style: italic;
+    text-shadow: 5px 5px 10px var(--shadow-color);
 }
