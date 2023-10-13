@@ -18,3 +18,7 @@ function getValue(){
         numbers.push(num)
     }
 }
+
+function finalResult(){
+    var result = document.getElementById('result')
+}
