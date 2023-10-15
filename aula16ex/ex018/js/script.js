@@ -21,4 +21,23 @@ function getValue(){
 
 function finalResult(){
     var result = document.getElementById('result')
+    var major = Math.max.apply(null, numbers)
+    var minor = Math.min.apply(null, numbers)
+    var sum = 0
+
+    for(var i = 0; i < numbers.length; i++){
+        sum += numbers[i]
+    }
+
+    if(numbers == 0){
+        alert('Adicione alguns valores primeiro!')
+    } else {
+        result.innerHTML = `Ao todo, temos ${numbers.length} números cadastrados.`
+        result.innerHTML += `<p>O maior valor informado foi ${major}.</p>`
+        result.innerHTML += `<p>O menor valor informado foi ${minor}.</p>`
+        result.innerHTML += `<p>Somando todos os valores, temos ${sum}.</p>`
+        result.innerHTML += `<p>A média dos valores digitados é ${sum/numbers.length}.</p>`
+    }
+
+    
 }
