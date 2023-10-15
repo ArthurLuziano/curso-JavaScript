@@ -4,7 +4,7 @@ function getValue(){
     let n = document.getElementById('num')
     let sel = document.getElementById('sel')
     let num = Number(n.value)
-    console.log(numbers)
+    var result = document.getElementById('result')
 
     if (numbers.indexOf(num) != -1){
         alert('O número já existe')
@@ -16,6 +16,7 @@ function getValue(){
         item.value = num
         sel.appendChild(item)
         numbers.push(num)
+        result.innerHTML = ''
     }
 }
 
